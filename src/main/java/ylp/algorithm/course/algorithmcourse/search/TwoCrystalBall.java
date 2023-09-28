@@ -14,6 +14,8 @@ public class TwoCrystalBall {
     Image that you have an array with boolean sort with all false value and then all true.
     Find the minimum index at which it's true. (You can change this problem with any array and a predicate)
 
+    It's called 2 crystal ball problem because you have the right to test have only 1 true test
+
     * Here we are mixing concepts of BinarySearch and Linear search
     * We divide the array in small chunk until we found a chunk that overlaps with result
     * Then we linear search in the small chunk
@@ -21,24 +23,19 @@ public class TwoCrystalBall {
     * Complexity = o(sqrt(n))
     */
     public static Optional<Integer> whenDoesItBreak(boolean[] ballResistance) {
-        int offset = (int) Math.round(Math.sqrt(ballResistance.length));
+        int offset = (int) Math.floor(Math.sqrt(ballResistance.length));
 
-        int lowerBand = 0;
-        int upperBand = lowerBand + offset;
+        int upperBand = offset;
 
-        while (!ballResistance[upperBand]) {
-            LOGGER.info("Looking in {} Lower band {} upper band {}", ballResistance, lowerBand, upperBand);
-            lowerBand = upperBand;
-            upperBand = upperBand + offset;
-
-            if (upperBand >= ballResistance.length) {
-                upperBand = ballResistance.length - 1;
-                LOGGER.info("Looking in {} Lower band {} upper band {}", ballResistance, lowerBand, upperBand);
+        for (; upperBand < ballResistance.length; upperBand += offset) {
+            if (ballResistance[upperBand]) {
                 break;
             }
         }
 
-        for (int i = lowerBand; i <= upperBand; i++) {
+        int lowerBand = upperBand - offset;
+
+        for (int i = lowerBand; i <= upperBand && upperBand < ballResistance.length; i++) {
             if (ballResistance[i]) {
                 LOGGER.info("Found breaking point at {}", i);
                 return Optional.of(i);
@@ -50,24 +47,19 @@ public class TwoCrystalBall {
     }
 
     public static <T> Optional<Integer> whenDoesItBreak(T[] array, Predicate<T> predicate) {
-        int offset = (int) Math.round(Math.sqrt(array.length));
+        int offset = (int) Math.floor(Math.sqrt(array.length));
 
-        int lowerBand = 0;
-        int upperBand = lowerBand + offset;
+        int upperBand = offset;
 
-        while (!predicate.test(array[upperBand])) {
-            LOGGER.info("Looking in {} Lower band {} upper band {}", array, lowerBand, upperBand);
-            lowerBand = upperBand;
-            upperBand = upperBand + offset;
-
-            if (upperBand >= array.length) {
-                upperBand = array.length - 1;
-                LOGGER.info("Looking in {} Lower band {} upper band {}", array, lowerBand, upperBand);
+        for (; upperBand < array.length; upperBand += offset) {
+            if (predicate.test(array[upperBand])) {
                 break;
             }
         }
 
-        for (int i = lowerBand; i <= upperBand; i++) {
+        int lowerBand = upperBand - offset;
+
+        for (int i = lowerBand; i <= upperBand && upperBand < array.length; i++) {
             if (predicate.test(array[i])) {
                 LOGGER.info("Found breaking point at {}", i);
                 return Optional.of(i);
