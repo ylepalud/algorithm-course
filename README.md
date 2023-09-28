@@ -1,33 +1,20 @@
 # algorithm-course
 
-## Books
+## Resources
+
+### Lecture
+
+[The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/)
+
+### books
 
 * The introduction to algorithms
-* For programmers Who don't know how to Datastructure and would like to do other things well too
+* For programmers Who don't know how to Data structure and would like to do other things well too
 
-## Time and space complexity
+## Chapter
 
-[Time and space complexity](https://theprimeagen.github.io/fem-algos/lessons/algorithms-and-time-space-complexity/time-and-space-complexity)
+### [Time and space complexity](Documentation%2FTime%20and%20space%20complexity.md)
 
-### Concepts
-* Growth is with the respect of input
-* Constants are dropped
-* Worst case is usually the way we measure
+### [Data Structure](Documentation%2FData%20Structure.md)
 
-### Tricks
-If you have input at every step complexity is log(n) or nlog(n)
-
-## Arrays Data Structure
-
-Continuous space of the type of data. 
-
-With an array we have to specify the size of space we allocated  UInt8 and UInt16 are completly different
-
-a = int[3] -> a[0] access first space
-
-Array specificity Access, modify and delete a specific index. Array can't grow
-
-## Search
-
-[Linear search](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fsearch%2FREADME.md)
-
+### [Linear search](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fsearch%2FREADME.md)
