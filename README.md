@@ -14,6 +14,9 @@
 * Constants are dropped
 * Worst case is usually the way we measure
 
+### Tricks
+If you have input at every step complexity is log(n) or nlog(n)
+
 ## Arrays Data Structure
 
 Continuous space of the type of data. 
