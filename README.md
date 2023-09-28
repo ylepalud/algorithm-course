@@ -29,4 +29,5 @@ Array specificity Access, modify and delete a specific index. Array can't grow
 
 ## Search
 
-### Linear search & kata setup
+[Linear search](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fsearch%2FREADME.md)
+
