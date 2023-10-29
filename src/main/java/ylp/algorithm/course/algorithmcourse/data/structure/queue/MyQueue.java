@@ -12,7 +12,7 @@ public class MyQueue<T> {
         this.length = 0;
     }
 
-    public void push(T t) {
+    public void queue(T t) {
         Node<T> newNode = new Node<>(t);
 
         length++;
@@ -27,7 +27,7 @@ public class MyQueue<T> {
         tail = newNode;
     }
 
-    public Optional<T> pop() {
+    public Optional<T> dequeue() {
         if (head == null) {
             return Optional.empty();
         }
@@ -42,7 +42,8 @@ public class MyQueue<T> {
     }
 
     public Optional<T> peek() {
-        return Optional.ofNullable(head.getValue());
+        return Optional.ofNullable(head)
+                .map(Node::getValue);
     }
 
     public int size() {
