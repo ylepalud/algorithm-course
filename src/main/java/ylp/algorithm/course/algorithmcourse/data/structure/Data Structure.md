@@ -20,3 +20,14 @@ What's wrong with array:
 * Singly linked
 * Double linked
 
+## Complexity
+
+### Naive
+
+Prepend//append Complexity = o(1)
+Insertion middle Complexity = o(n)
+Deletion start/end = o(1)
+Deletion middle = o(n)
+Get head/tail = o(1)
+Get middle = o(n)
+
