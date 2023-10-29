@@ -22,7 +22,7 @@ public class MyStack<T> {
             return;
         }
 
-        newNode.setNext(head);
+        newNode.setPrevious(head);
 
         head = newNode;
     }
@@ -36,9 +36,14 @@ public class MyStack<T> {
 
         Node<T> oldHead = head;
 
-        head = head.getNext();
+        head = head.getPrevious();
 
         return Optional.of(oldHead.getValue());
+    }
+
+    public Optional<T> peek() {
+        return Optional.ofNullable(head)
+                .map(Node::getValue);
     }
 
     public int size() {
