@@ -1,6 +1,4 @@
-package ylp.algorithm.course.algorithmcourse.data.structure;
-
-import java.util.Optional;
+package ylp.algorithm.course.algorithmcourse.data.structure.linked_list;
 
 public class Node<T> {
 
