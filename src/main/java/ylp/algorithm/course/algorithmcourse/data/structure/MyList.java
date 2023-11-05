@@ -1,8 +1,8 @@
-package ylp.algorithm.course.algorithmcourse.data.structure.linked_list;
+package ylp.algorithm.course.algorithmcourse.data.structure;
 
 import java.util.Optional;
 
-public interface LinkedList<T> {
+public interface MyList<T> {
     void append(T element);
     void prepend(T element);
     int length();

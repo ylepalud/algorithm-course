@@ -3,7 +3,6 @@ package ylp.algorithm.course.algorithmcourse.data.structure;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import ylp.algorithm.course.algorithmcourse.data.structure.linked_list.LinkedList;
 import ylp.algorithm.course.algorithmcourse.data.structure.linked_list.NaiveLinkedList;
 
 import java.util.Optional;
@@ -15,7 +14,7 @@ class NaiveLinkedListTest {
     @Test
     void insertAt() {
         // Given
-        LinkedList<Integer> integerLinkedList = new NaiveLinkedList<>();
+        MyList<Integer> integerLinkedList = new NaiveLinkedList<>();
         integerLinkedList.append(0);
         integerLinkedList.append(2);
 
@@ -36,7 +35,7 @@ class NaiveLinkedListTest {
     @Test
     void prepend() {
         // Given
-        LinkedList<Integer> integerLinkedList = new NaiveLinkedList<>();
+        MyList<Integer> integerLinkedList = new NaiveLinkedList<>();
 
         // When
         integerLinkedList.prepend(2);
@@ -57,7 +56,7 @@ class NaiveLinkedListTest {
     @Test
     void append() {
         // Given
-        LinkedList<Integer> integerLinkedList = new NaiveLinkedList<>();
+        MyList<Integer> integerLinkedList = new NaiveLinkedList<>();
 
         // When
         integerLinkedList.append(0);
@@ -78,7 +77,7 @@ class NaiveLinkedListTest {
     @Test
     void remove() {
         // Given
-        LinkedList<Integer> integerLinkedList = new NaiveLinkedList<>();
+        MyList<Integer> integerLinkedList = new NaiveLinkedList<>();
         integerLinkedList.append(1);
 
         // When
@@ -95,7 +94,7 @@ class NaiveLinkedListTest {
     @Test
     void remove_with_multiple_element() {
         // Given
-        LinkedList<Integer> integerLinkedList = new NaiveLinkedList<>();
+        MyList<Integer> integerLinkedList = new NaiveLinkedList<>();
         integerLinkedList.append(1);
         integerLinkedList.append(2);
         integerLinkedList.append(1);
@@ -114,7 +113,7 @@ class NaiveLinkedListTest {
     @Test
     void size() {
         // Given
-        LinkedList<Integer> integerLinkedList = new NaiveLinkedList<>();
+        MyList<Integer> integerLinkedList = new NaiveLinkedList<>();
         integerLinkedList.append(1);
         integerLinkedList.append(1);
         integerLinkedList.append(1);
@@ -130,7 +129,7 @@ class NaiveLinkedListTest {
     @Test
     void constructor() {
         // Given
-        LinkedList<Integer> integerLinkedList;
+        MyList<Integer> integerLinkedList;
 
         // When
         integerLinkedList = new NaiveLinkedList<>(0, 1, 2);
@@ -153,7 +152,7 @@ class NaiveLinkedListTest {
     })
     void contain(Integer valueWeLookingFor, boolean expected) {
         // Given
-        LinkedList<Integer> integerLinkedList = new NaiveLinkedList<>(0, 1, 2);
+        MyList<Integer> integerLinkedList = new NaiveLinkedList<>(0, 1, 2);
 
         // When
         boolean test = integerLinkedList.contain(valueWeLookingFor);

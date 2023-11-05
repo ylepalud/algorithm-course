@@ -1,5 +1,7 @@
 package ylp.algorithm.course.algorithmcourse.data.structure.linked_list;
 
+import ylp.algorithm.course.algorithmcourse.data.structure.MyList;
+
 import java.util.Optional;
 
 /**
@@ -16,7 +18,7 @@ import java.util.Optional;
  *  remove = o(n) is this case but there is better solutions
  *  contain = o(n) is this case but there is better solutions
  * */
-public class NaiveLinkedList<T> implements LinkedList<T> {
+public class NaiveLinkedList<T> implements MyList<T> {
 
     private Node<T> head;
 
