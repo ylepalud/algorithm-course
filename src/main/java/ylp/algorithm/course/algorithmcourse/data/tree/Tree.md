@@ -9,6 +9,15 @@ Tree are everywhere
 * Compilers
 * etc ...
 
+## Operation
+
+### Traversal
+
+Visiting a node then recurse
+
+With Pre, post and recurse steps
+
+
 ### Terminology
 
 Root: Top Node
