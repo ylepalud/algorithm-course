@@ -33,6 +33,8 @@ We visit each node of a deep before moving to the next tree level
 
 We implicitly use a Queue. This mean we can rewrite this algorithm without recursion
 
+BFS preserve the shape of the tree
+
 ### Terminology
 
 Root: Top Node
