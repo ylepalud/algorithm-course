@@ -5,9 +5,8 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
-class TreeInOderTest {
+class TreePreOderTest {
 
     @Test
     void preOrderSearch() {
@@ -31,7 +30,7 @@ class TreeInOderTest {
         node2.setLeft(node5);
         node2.setRight(node6);
 
-        TreeInOder<Integer> tree = new TreeInOder<>(root);
+        TreePreOder<Integer> tree = new TreePreOder<>(root);
 
         // When
         List<Integer> integers = tree.preOrderSearch();
