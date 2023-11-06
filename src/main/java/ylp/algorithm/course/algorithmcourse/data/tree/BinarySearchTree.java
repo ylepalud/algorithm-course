@@ -34,4 +34,31 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
         return findRecurse(value, currentNode.getRight());
     }
+
+    public void insert(T value) {
+        insertRecurse(null, root, value);
+    }
+
+    private void insertRecurse(BinaryNode<T> parent, BinaryNode<T> currentValue, T value) {
+        // Base case
+        if (currentValue == null) {
+            if (parent.getValue().compareTo(value) <= 0) {
+                parent.setRight(new BinaryNode<>(value));
+            } else {
+                parent.setLeft(new BinaryNode<>(value));
+            }
+            return;
+        }
+
+        // Recursion
+        if (currentValue.getValue().compareTo(value) <= 0) {
+            insertRecurse(currentValue, currentValue.getRight(), value);
+        } else {
+            insertRecurse(currentValue, currentValue.getLeft(), value);
+        }
+    }
+
+    public boolean delete(T value) {
+        throw new RuntimeException("Not implemented");
+    }
 }
