@@ -1,4 +1,4 @@
-package ylp.algorithm.course.algorithmcourse.data.structure.queue;
+package ylp.algorithm.course.algorithmcourse.data.list.queue;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,10 +1,8 @@
-package ylp.algorithm.course.algorithmcourse.data.structure.array_list;
+package ylp.algorithm.course.algorithmcourse.data.list.array_list;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.stream.IntStream;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class MyArrayListTest {
 

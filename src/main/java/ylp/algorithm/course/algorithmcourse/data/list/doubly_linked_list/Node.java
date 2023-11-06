@@ -1,4 +1,4 @@
-package ylp.algorithm.course.algorithmcourse.data.structure.doubly_linked_list;
+package ylp.algorithm.course.algorithmcourse.data.list.doubly_linked_list;
 
 import java.util.Optional;
 

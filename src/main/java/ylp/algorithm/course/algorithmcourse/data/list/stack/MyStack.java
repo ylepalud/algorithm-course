@@ -1,4 +1,4 @@
-package ylp.algorithm.course.algorithmcourse.data.structure.stack;
+package ylp.algorithm.course.algorithmcourse.data.list.stack;
 
 import java.util.Optional;
 

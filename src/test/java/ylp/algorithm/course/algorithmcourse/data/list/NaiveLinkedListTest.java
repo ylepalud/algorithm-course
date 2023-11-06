@@ -1,9 +1,9 @@
-package ylp.algorithm.course.algorithmcourse.data.structure;
+package ylp.algorithm.course.algorithmcourse.data.list;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import ylp.algorithm.course.algorithmcourse.data.structure.linked_list.NaiveLinkedList;
+import ylp.algorithm.course.algorithmcourse.data.list.linked_list.NaiveLinkedList;
 
 import java.util.Optional;
 

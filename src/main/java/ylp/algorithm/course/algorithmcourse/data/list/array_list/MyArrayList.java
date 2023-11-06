@@ -1,6 +1,6 @@
-package ylp.algorithm.course.algorithmcourse.data.structure.array_list;
+package ylp.algorithm.course.algorithmcourse.data.list.array_list;
 
-import ylp.algorithm.course.algorithmcourse.data.structure.MyList;
+import ylp.algorithm.course.algorithmcourse.data.list.MyList;
 
 import java.util.Optional;
 

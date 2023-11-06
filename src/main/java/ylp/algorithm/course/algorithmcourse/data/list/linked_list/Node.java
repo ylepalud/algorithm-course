@@ -1,4 +1,4 @@
-package ylp.algorithm.course.algorithmcourse.data.structure.linked_list;
+package ylp.algorithm.course.algorithmcourse.data.list.linked_list;
 
 public class Node<T> {
 
