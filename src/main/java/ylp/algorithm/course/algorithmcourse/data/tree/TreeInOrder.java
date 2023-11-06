@@ -3,11 +3,11 @@ package ylp.algorithm.course.algorithmcourse.data.tree;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TreePostOrder<T> {
+public class TreeInOrder<T> {
 
     private BinaryNode<T> root;
 
-    public TreePostOrder(BinaryNode<T> root) {
+    public TreeInOrder(BinaryNode<T> root) {
         this.root = root;
     }
 
@@ -26,10 +26,12 @@ public class TreePostOrder<T> {
 
         // Recurse
         walk(currentNode.getLeft(), path);
+
+        path.add(currentNode.getValue());
+
         walk(currentNode.getRight(), path);
 
         // Post
-        path.add(currentNode.getValue());
 
         return path;
     }

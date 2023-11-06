@@ -11,7 +11,7 @@ public class TreePreOder<T> {
         this.root = root;
     }
 
-    public List<T> preOrderSearch() {
+    public List<T> traverse() {
         return walk(root, new ArrayList<>());
     }
 

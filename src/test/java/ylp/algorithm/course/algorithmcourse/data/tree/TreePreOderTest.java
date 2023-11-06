@@ -33,7 +33,7 @@ class TreePreOderTest {
         TreePreOder<Integer> tree = new TreePreOder<>(root);
 
         // When
-        List<Integer> integers = tree.preOrderSearch();
+        List<Integer> integers = tree.traverse();
 
         // Then
         assertThat(integers)

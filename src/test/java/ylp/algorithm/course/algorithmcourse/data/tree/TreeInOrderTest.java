@@ -6,7 +6,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class TreePostOrderTest {
+class TreeInOrderTest {
 
     @Test
     void preOrderSearch() {
@@ -30,13 +30,13 @@ class TreePostOrderTest {
         node2.setLeft(node5);
         node2.setRight(node6);
 
-        TreePostOrder<Integer> tree = new TreePostOrder<>(root);
+        TreeInOrder<Integer> tree = new TreeInOrder<>(root);
 
         // When
         List<Integer> integers = tree.traverse();
 
         // Then
         assertThat(integers)
-                .containsExactly(4, 5, 3, 2, 3, 2, 1);
+                .containsExactly(4, 3, 5, 1, 2, 2, 3);
     }
 }
