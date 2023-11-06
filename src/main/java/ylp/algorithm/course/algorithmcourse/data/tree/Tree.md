@@ -53,4 +53,17 @@ Balance tree: A tree is perfectly balanced when any node's left and right childr
 
 Branching factor: The amount of children a tree has
 
+
+### Binary Search Tree (BST)
+
+It's Binary tree wich every value of node on the left side of current node are smaller than current node value
+and right side are bigger thant current node value
+
+It's look like quicksort algorithm
+
+#### Find
+
+
+
+
 ## Complexity
