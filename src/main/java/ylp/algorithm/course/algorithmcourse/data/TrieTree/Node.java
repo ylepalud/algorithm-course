@@ -1,5 +1,7 @@
 package ylp.algorithm.course.algorithmcourse.data.TrieTree;
 
+import java.util.Arrays;
+import java.util.Objects;
 import java.util.Optional;
 
 public class Node {
@@ -28,5 +30,9 @@ public class Node {
         Node node = new Node(c);
         linkedNode[index] = node;
         return node;
+    }
+
+    public boolean isLeaf() {
+        return Arrays.stream(linkedNode).anyMatch(Objects::nonNull);
     }
 }

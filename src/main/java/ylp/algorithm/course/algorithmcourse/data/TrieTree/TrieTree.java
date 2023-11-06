@@ -54,6 +54,8 @@ public class TrieTree {
         while (!letters.isEmpty()) {
             Node current = letters.pop();
 
+            letters.addAll(Arrays.stream(current.linkedNode).filter(Objects::nonNull).toList());
+
             if (current.isWord) {
                 letters.stream()
                         .map(a -> a.value)
@@ -62,7 +64,6 @@ public class TrieTree {
                         .ifPresent(words::add);
             }
 
-            letters.addAll(Arrays.stream(current.linkedNode).filter(Objects::nonNull).toList());
         }
 
         return words;
