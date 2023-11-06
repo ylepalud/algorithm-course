@@ -17,6 +17,21 @@ Visiting a node then recurse
 
 With Pre, post and recurse steps
 
+### Deep First Search (DFS)
+
+Complexity(n)
+
+In Order while go left before visiting any node
+
+We implicitly use a Stack. This mean we can rewrite this algorithm without recursion
+
+### Breath First Search (BFS)
+
+Complexity(n)
+
+We visit each node of a deep before moving to the next tree level 
+
+We implicitly use a Queue. This mean we can rewrite this algorithm without recursion
 
 ### Terminology
 
