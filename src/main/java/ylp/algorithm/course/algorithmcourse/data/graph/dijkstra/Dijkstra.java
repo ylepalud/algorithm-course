@@ -21,6 +21,17 @@ public class Dijkstra {
     }
 
 
+    /*
+    * Prev, seen, dist -> O(V)
+    *
+    * while is O(V)
+    *
+    * But hasUnVisited is O(V)
+    * And getLowestUnvisited is O(V)
+    *
+    * -> O(v^2) Let's use a Min Heap in order to have a sweet O(log(v+E))
+    * Complexity
+    */
     public List<Integer> find(int source,
                               int seek) {
         Boolean[] seen = new Boolean[graph.size()];
