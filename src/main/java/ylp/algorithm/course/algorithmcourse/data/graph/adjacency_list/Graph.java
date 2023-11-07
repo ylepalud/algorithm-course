@@ -14,6 +14,13 @@ public class Graph {
         nodes = new HashSet<>();
     }
 
+    public void addDijkstra(int from, int to, int weight) {
+        nodes.add(from);
+        nodes.add(to);
+        Map<Integer, Edge> edges = graph.computeIfAbsent(from, key -> new HashMap<>());
+        edges.computeIfAbsent(to, key -> new Edge(key, weight));
+    }
+
     public void add(int from, int to, int weight) {
         from--;
         to--;

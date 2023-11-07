@@ -77,3 +77,28 @@ Use a stack
 ### BFS
 
 Use a Queue
+
+### Dijkstra
+
+We will do a BFS because we need a previous path builder.
+
+It's a greedy algorithm
+
+We need a 
+
+previous = [-1 ...]
+
+seen = [false, false ...] (probably not needed with a better data structure)
+
+distance = [Infinite, Infinite, Infinite, 0] 0 is the source
+
+    while hastUnVisited()
+        low = getLowestUnseen()
+        seen[low] = true
+    
+        for edge in low
+            if seen[edge] continue
+            dist = dist [low] + edge.w
+            if dist < dist[edge]
+                prev[edge = low
+                dist[edge] = dist
