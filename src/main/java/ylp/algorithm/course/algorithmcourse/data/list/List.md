@@ -31,3 +31,4 @@ Deletion middle = o(n)
 Get head/tail = o(1)
 Get middle = o(n)
 
+## [Array_vs_linked_list.md](Array_vs_linked_list.md)

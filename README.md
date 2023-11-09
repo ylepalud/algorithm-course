@@ -21,3 +21,26 @@
 
 ### [Sort.md](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fsort%2FSort.md)
 
+### [List.md](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fdata%2Flist%2FList.md)
+
+### [Recursion.md](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Frecursion%2FRecursion.md)
+
+### [Queue.md](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fdata%2Flist%2Fqueue%2FQueue.md)
+
+### [ring_buffer.md](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fdata%2Flist%2Fring_buffer%2Fring_buffer.md)
+
+### [stack.md](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fdata%2Flist%2Fstack%2Fstack.md)
+
+### [Tree.md](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fdata%2Ftree%2FTree.md)
+
+### [TrieTree.md](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fdata%2FTrieTree%2FTrieTree.md)
+
+### [Heap.md](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Fdata%2Fheap%2FHeap.md)
+
+### [Lru.md](src%2Fmain%2Fjava%2Fylp%2Falgorithm%2Fcourse%2Falgorithmcourse%2Flru%2FLru.md)
+
+## Next
+
+* Tons of graph data structure
+* Exotic tree algorithms
+* Implementing anything in Rust
